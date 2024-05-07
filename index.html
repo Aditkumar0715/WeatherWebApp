@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyWeather</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <!-- WebApp heading -->
+    <h1 class="main-heading">Weather WebApp</h1>
+
+    <!-- Switch tab container -->
+    <div class="tab-container">
+      <button class="tab your-weather-tab">Current</button>
+      <button class="tab search-weather-tab">Search</button>
+    </div>
+
+    <!-- search location screen -->
+    <div class="search-container">
+      <form class="search-form">
+        <input type="text" placeholder="Search for location" class="search-input">
+        <button class="search-btn">
+          <img width="40" src="https://img.icons8.com/sf-regular/48/search.png" alt="search" class="search-icon"/>
+        </button>
+      </form>
+    </div>
+    <!-- Loading Animation screen -->
+    <div class="loader-container">
+      <img src="https://i.pinimg.com/originals/dc/aa/7a/dcaa7a90d62a19169bfa46c1c6625696.gif" alt="" class="load">
+    </div>
+
+    <!-- Grant permission screen -->
+    <div class="grant-permission-container">
+      <img class="permission-img" width="150" height="150" src="https://img.icons8.com/color/96/where.png" alt="where"/>
+      <h2 class="permission-heading">Where are you?</h2>
+      <p class="permission-access-para">Location access needed to show the weather</p>
+      <button class="grant-access-btn">Grant Access</button>
+    </div>
+
+
+    <!-- weather details screen -->
+    <div class="weather-details-container">
+      <div class="main-details">
+        <div class="city-container">
+          <h2 class="city-name">Goa</h2>
+          <img alt="flag" class="flag">
+        </div>
+
+        <h3 class="weather-description">cloudy</h3>
+        <img width="100px" class="weather-icon" alt="weatherIcon">
+        <h3 class="temperature">34 &deg;C</h3>
+      </div>
+
+      <div class="info-cards">
+        <div class="card">
+          <img width="96" height="96" src="https://img.icons8.com/fluency/96/wind.png" alt="wind"/>
+          <h3>Windspeed</h3>
+          <p class="windspeed-data">3rds</p>
+        </div>
+        <div class="card">
+          <img width="96" height="96" src="https://img.icons8.com/fluency/96/dew-point.png" alt="dew-point"/>
+          <h3>Humidity</h3>
+          <p class="humidity-data">098j</p>
+
+        </div>
+        <div class="card">
+          <img width="96" height="96" src="https://img.icons8.com/fluency/96/cloud.png" alt="cloud"/>
+          <h3>Clouds</h3>
+          <p class="cloudiness-data">u098</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
